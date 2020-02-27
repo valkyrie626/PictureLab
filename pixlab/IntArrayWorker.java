@@ -120,4 +120,44 @@ public class IntArrayWorker
     return count;
     
   }
+  
+  /**
+   * returns largest - a4 q#2
+   * /
+   */
+  public int getLargest()
+  {
+      int large=0;
+      for (int row=0; row< matrix.length; row++)
+      {
+          for (int col= 0; col<matrix[0].length; col++)
+          {
+              if (matrix [row] [col]>large)
+               large=matrix [row] [col]; 
+          }
+      }
+      
+      return large;
+  }
+  
+  /**
+   *  returns the sum of a column
+   * /
+   */
+   public int getColTotal(int n)
+   {
+    int sum=0;
+    
+    for (int row=0; row< matrix.length; row++)
+      {
+          for (int col= 0; col<matrix[0].length; col++)
+          {
+              if (col == (n))
+               sum+= matrix [row][col]; 
+          }
+      }
+    
+    return sum;
+   }
+  
 }
