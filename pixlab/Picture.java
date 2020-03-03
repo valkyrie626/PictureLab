@@ -116,11 +116,10 @@ public class Picture extends SimplePicture
     {
       for (Pixel pixelObj : rowArray)
       {
-        pixelObj.setRed(255);
-        pixelObj.setGreen(255);
-        pixelObj.setBlue(255);
+        getBasicPixel(x-255, y-255);
       }
     }
+    
 }
 
   /** Method that mirrors the picture around a 
