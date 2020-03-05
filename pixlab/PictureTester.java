@@ -17,6 +17,15 @@ public class PictureTester
     beach.explore();
   }
   
+  /** method to mirror pic from bottom to top */
+  public static void testMirrorHorizontalBotToTop()
+  {
+    Picture beach = new Picture("caterpillar.jpg");
+    beach.explore();
+    beach.MirrorHorizontalBotToTop();
+    beach.explore();
+  }
+  
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
